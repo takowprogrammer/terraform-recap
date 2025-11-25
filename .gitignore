@@ -1,0 +1,55 @@
+# .gitignore for Terraform
+
+# .gitignore for Terraform
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform lock file (optional - some teams commit this)
+# .terraform.lock.hcl
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which are likely to contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used to override resources locally
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+*tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Lambda function zip files
+**/lambda/*.zip
+**/lambda/function.zip
+
+# Terraform workspace directories
+terraform.tfstate.d/
+
+# IDE and OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+# Ignore output directories
+**/output/*
+
+# Keep output directory structure
+!**/output/.gitkeep

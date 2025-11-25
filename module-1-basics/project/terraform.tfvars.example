@@ -1,0 +1,19 @@
+# Example terraform.tfvars file
+# Copy this to terraform.tfvars and customize as needed
+
+# AWS Region (must be a US region for this tutorial)
+aws_region = "us-east-1"
+
+# Environment name
+environment = "development"
+
+# Project name (must be lowercase, numbers, and hyphens only)
+project_name = "terraform-basics"
+
+# Common tags for all resources
+common_tags = {
+  ManagedBy = "Terraform"
+  Tutorial  = "AWS-Basics"
+  Owner     = "YourName"
+  Purpose   = "Learning"
+}
