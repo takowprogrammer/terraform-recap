@@ -49,7 +49,7 @@ terraform output state_bucket_name
 cd ..
 
 # Windows:
-package-lambda.bat
+.\package-lambda.bat
 
 # Linux/Mac:
 chmod +x package-lambda.sh

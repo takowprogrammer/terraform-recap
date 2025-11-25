@@ -1,15 +1,15 @@
 # Backend configuration for remote state
 # IMPORTANT: Uncomment and configure AFTER creating backend infrastructure
 
-# terraform {
-#   backend "s3" {
-#     bucket         = "terraform-state-YOUR-ACCOUNT-ID"  # Replace with your bucket name
-#     key            = "module-3/terraform.tfstate"
-#     region         = "us-east-1"
-#     dynamodb_table = "terraform-state-locks"
-#     encrypt        = true
-#   }
-# }
+ terraform {
+   backend "s3" {
+     bucket         = "terraform-state-093218045933"  # Replace with your bucket name
+     key            = "module-3/terraform.tfstate"
+    region         = "us-east-1"
+     dynamodb_table = "terraform-state-locks"
+     encrypt        = true
+   }
+ }
 
 # To use this backend:
 # 1. Create backend infrastructure first (see backend-setup/)
